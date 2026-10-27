@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fix Home - On Demand Home Services</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: sans-serif; }
+        body { background-color: #f8fafc; color: #333; }
+        header { display: flex; justify-content: space-between; align-items: center; padding: 15px; background: #ffffff; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+        .logo { font-size: 1.3rem; font-weight: bold; color: #2563eb; }
+        .btn-nav { background: #2563eb; color: white; padding: 8px 12px; border-radius: 5px; text-decoration: none; font-size: 0.9rem; }
+        .hero { text-align: center; padding: 40px 15px; background: linear-gradient(135deg, #1e3a8a, #2563eb); color: white; }
+        .hero h1 { font-size: 1.8rem; margin-bottom: 10px; }
+        .hero p { font-size: 1rem; margin-bottom: 20px; opacity: 0.9; }
+        .services { padding: 30px 15px; text-align: center; }
+        .service-grid { display: grid; grid-template-columns: 1fr; gap: 15px; margin-top: 20px; }
+        .card { background: white; padding: 20px; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.05); }
+        .booking { background-color: #e2e8f0; padding: 30px 15px; text-align: center; }
+        .booking form { max-width: 100%; margin-top: 15px; display: flex; flex-direction: column; gap: 10px; }
+        .booking input, .booking select, .booking button { padding: 12px; border-radius: 5px; border: 1px solid #cbd5e1; font-size: 1rem; }
+        .booking button { background: #2563eb; color: white; border: none; font-weight: bold; }
+        footer { text-align: center; padding: 15px; background: #0f172a; color: white; font-size: 0.8rem; }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">🛠️ Fix Home</div>
+        <a href="#contact" class="btn-nav">Book Now</a>
+    </header>
+
+    <section class="hero">
+        <h1>Ghar Ki Har Problem Ka Perfect Solution</h1>
+        <p>Expert Plumbers, Electricians & AC Mechanics at your doorstep.</p>
+    </section>
+
+    <section class="services">
+        <h2>Our Services</h2>
+        <div class="service-grid">
+            <div class="card"><h3>⚡ Electrician</h3><p>Wiring, switch repair & fitting.</p></div>
+            <div class="card"><h3>🔧 Plumbing</h3><p>Tap leakage & pipe fittings.</p></div>
+            <div class="card"><h3>❄️ AC Repair</h3><p>Gas filling & service.</p></div>
+        </div>
+    </section>
+
+    <section id="contact" class="booking">
+        <h2>Book a Service</h2>
+        <form>
+            <input type="text" placeholder="Your Name" required>
+            <input type="tel" placeholder="Mobile Number" required>
+            <select required>
+                <option value="">Select Service</option>
+                <option value="electrician">Electrician</option>
+                <option value="plumber">Plumber</option>
+                <option value="ac">AC Service</option>
+            </select>
+            <button type="submit">Submit Request</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Fix Home. All rights reserved.</p>
+    </footer>
+</body>
+</html>
